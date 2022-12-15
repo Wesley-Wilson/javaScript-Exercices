@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/img/editar-documento.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/estilo.css">
+    <title>Segunda Lista</title>
+</head>
+<body>
+
+    
+    <div class="container">
+        <div id="calc-container">
+            <h2>Reajuste Sálarial</h2>
+            <form id="imc-form">
+                <div class="form-imputs">
+                    <div class="form-control">
+                        <label for="salarioMensal">Sálario Mensal: </label>
+                        <input type="text" name="salarioMensal" id="salarioMensal" placeholder="Exemplo R$1000,00">
+                    </div>
+                    <div class="form-control">
+                        <label for="reajuste">Reajuste:</label>
+                        <input type="text" name="reajuste" id="reajuste" placeholder="Exemplo 10%">
+                    </div>
+
+                <div class="action-control">
+                    <button id="calc-btn">Calcular</button>
+                    <button id="clear-btn">Limpar</button>
+                </div>
+
+                <div id="return-page">
+                    <button class="return-index-btn"><a href="index.html">Voltar</a></button>
+                </div>
+            </form>
+        </div>
+
+        <div id="result-container" class="hide">
+            <p id="newSal" class="style-p">Novo salário: <span></span></p>
+            <button id="back-btn" class="style-btn">Voltar</button>
+        </div>
+
+    </div>
+
+
+    <script src="src/js/reajusteSalarialTrash.js"></script>
+
+</body>
+</html>

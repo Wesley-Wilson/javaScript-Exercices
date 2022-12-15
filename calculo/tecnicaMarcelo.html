@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Votos</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        .inputText{
+            margin: 10px 0px !important;
+        }
+        .btn{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1 class="title">Contador de Votos</h1>
+            <input type="number" name="" id="num1" class="inputText" placeholder="Digite a quantidade de votos válidos">
+            <input type="number" name="" id="num2" class="inputText" placeholder="Digite a quantidade de votos brancos">
+            <input type="number" name="" id="num3" class="inputText" placeholder="Digite a quantidade de votos nulos">
+            <button class="btn">Calcular</button>
+            <div class="result"></div>
+        </div>
+        <strong></strong>
+    </div>
+
+    <script>
+        document.querySelector(".btn").addEventListener("click", () => {
+            let validos = parseInt(document.querySelector("#num1").value)
+            let brancos = parseInt(document.querySelector("#num2").value)
+            let nulos = parseInt(document.querySelector("#num3").value)
+            let total = validos + brancos + nulos;
+
+            document.querySelector(".result").innerHTML ="Total de Eleitores: "+ total;
+        });
+    </script>
+</html>

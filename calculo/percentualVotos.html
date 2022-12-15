@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/img/editar-documento.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/estilo.css">
+    <title>Segunda Lista</title>
+</head>
+<body>
+
+    
+    <div class="container">
+        <div id="calc-container">
+            <h2>Percentual de Votos</h2>
+            <form id="imc-form">
+                <div class="form-imputs">
+                    <div class="form-control">
+                        <label for="totalVote">Total:</label>
+                        <input type="text" name="totalVote" id="totalVote" placeholder="Total de votos">
+                    </div>
+                    <div class="form-control">
+                        <label for="validVote">Válidos:</label>
+                        <input type="text" name="validVote" id="validVote" placeholder="Votos válidos">
+                    </div>
+                    <div class="form-control">
+                        <label for="nullVote">Nulos:</label>
+                        <input type="text" name="nullVote" id="nullVote" placeholder="Votos nulos">
+                    </div>
+                    <div class="form-control">
+                        <label for="whiteVote">Brancos:</label>
+                        <input type="text" name="whiteVote" id="whiteVote" placeholder="Votos brancos">
+                    </div>
+                </div>
+
+                <div class="action-control">
+                    <button id="calc-btn">Calcular</button>
+                    <button id="clear-btn">Limpar</button>
+                </div>
+
+                <div id="return-page">
+                    <button class="return-index-btn"><a href="index.html">Voltar</a></button>
+                </div>
+            </form>
+        </div>
+
+        <div id="result-container" class="hide">
+            <p id="valid-number" class="style-p">Percentual válido: <span></span></p>
+            <p id="null-number" class="style-p">Percentual nulo: <span></span></p>
+            <p id="white-number" class="style-p">Percentual branco: <span></span></p>
+            <button id="back-btn" class="style-btn">Voltar</button>
+        </div>
+
+    </div>
+
+
+    <script src="src/js/percentualVoto.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/img/editar-documento.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/estilo.css">
+    <title>Segunda Lista</title>
+</head>
+<body>
+
+    
+    <div class="container">
+        <div id="calc-container">
+            <h2>Conversor de idade em dias</h2>
+            <form id="imc-form">
+                <div class="form-imputs">
+                    <div class="form-control">
+                        <label for="year">Ano:</label>
+                        <input type="text" name="year" id="year" placeholder="Exemplo 22 anos">
+                    </div>
+                    <div class="form-control">
+                        <label for="mounth">Mês:</label>
+                        <input type="text" name="mounth" id="mounth" placeholder="Exemplo 3 meses">
+                    </div>
+                    <div class="form-control">
+                        <label for="day">Dia:</label>
+                        <input type="text" name="day" id="day" placeholder="Exemplo 10 dias">
+                    </div>
+                </div>
+
+                <div class="action-control">
+                    <button id="calc-btn">Converter</button>
+                    <button id="clear-btn">Limpar</button>
+                </div>
+
+                <div id="return-page">
+                    <button class="return-index-btn"><a href="index.html">Voltar</a></button>
+                </div>
+
+            </form>
+        </div>
+        <div id="result-container" class="hide">
+            <p id="day-number" class="style-p">Sua idade em dias: <span></span></p>
+            <button id="back-btn" class="style-btn">Voltar</button>
+        </div>
+    </div>
+
+
+    <script src="src/js/conversorDia.js"></script>
+
+</body>
+</html> 
